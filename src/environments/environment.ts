@@ -1,12 +1,8 @@
-// This file can be replaced during build by using the `fileReplacements` array.
-// `ng build` replaces `environment.ts` with `environment.prod.ts`.
-// The list of file replacements can be found in `angular.json`.
-
 export const environment = {
-	production: false,
-	apiUrl: 'http://localhost:8080/api/v1',
-	defaultProfilePhotoUrl: 'http://localhost:4200/assets/images/avatar.jpg',
-	defaultCoverPhotoUrl: 'http://localhost:4200/assets/images/cover.jpg'
+  production: false,
+  apiUrl: 'http://springboot-service:8080/api/v1', // Use the service name defined in Kubernetes
+  defaultProfilePhotoUrl: '/assets/images/avatar.jpg', // Use relative paths for assets
+  defaultCoverPhotoUrl: '/assets/images/cover.jpg',   // Use relative paths for assets
 };
 
 /*
